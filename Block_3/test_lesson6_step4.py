@@ -24,9 +24,10 @@ def calculate_answer(browser):
             final_answer += answer_text
     print(final_answer)
 
+
 def test_stepic_authorization_with_links(browser):
     browser.get(links[0])
-    browser.find_element(By.CSS_SELECTOR, "#ember453").click()
+    browser.find_element(By.CSS_SELECTOR, "#ember470").click()
     browser.find_element(By.CSS_SELECTOR, "#id_login_email").send_keys('avolgin@niisokb.ru')
     browser.find_element(By.CSS_SELECTOR, "#id_login_password").send_keys('P@ssw0rd')
     browser.find_element(By.CSS_SELECTOR, "button.sign-form__btn.button_with-loader").click()
